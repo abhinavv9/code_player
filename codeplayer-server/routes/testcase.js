@@ -6,7 +6,7 @@ var userController = require("../controllers/user");
 var quesController = require("../controllers/question")
 var testController = require("../controllers/testcase")
 
-router.use(authController.isSignedIn, userController.getUserById, authController.isAdminOrSemiAdmin)
+router.use(userController.getUserById)
 
 router.param("questionId", quesController.getQuestionData, quesController.isProblemSetter);
 

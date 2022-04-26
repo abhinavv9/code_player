@@ -153,14 +153,14 @@ function HomeComponent() {
 
             <div className="jumbotron jumbotron-fluid bg-dark text-light">
                 <div className="container">
-                    <h1 className="display-4">Code Player</h1>
-                    <p className="lead">The ultimate code gaming platform for geeky coders</p>
+                    <h1 className="display-4">Pluto</h1>
+                    <p className="lead">Akgec's Online Judge</p>
 
                     <div className="align-items-center text-center my-5">
-                        <h2 className="py-3">Like What We do ?</h2>
-                        <button className="btn btn-lg btn-warning text-light" data-toggle="modal" data-target="#paymentModal">Buy Me A Coffee ?</button>
+                        {/* <h2 className="py-3">Like What We do ?</h2>
+                        <button className="btn btn-lg btn-warning text-light" data-toggle="modal" data-target="#paymentModal">Buy Me A Coffee ?</button> */}
 
-                        <h4 className="text-center mt-5">Want to create Contest? <a className="text-decoration-none" href="http://saurass.in" target="_blank"><span className="contact-me">Contact me !</span></a></h4>
+                        <h4 className="text-center mt-5">Want to create Contest? <a className="text-decoration-none" href="" target="_blank"><span className="contact-me">Contact Admin !</span></a></h4>
 
                     </div>
                 </div>
@@ -173,7 +173,7 @@ function HomeComponent() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 col-sm-12 justify-content-center">
-                        <h2>We Speak 2 Languages</h2>
+                        <h2>Spport 2 Languages</h2>
                         <p>We respect all the languages, but speak only few.</p>
 
                         <ul className="hideBulletInli">
@@ -199,8 +199,8 @@ function HomeComponent() {
                     </div>
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                         <div className="container align-items-center">
-                            <img alt="Hope never dies" className="right-logo" src={logo}></img>
-                            <h2 className="text-center mt-3">Big Steps Begin with Small Steps</h2>
+                            {/* <img alt="Hope never dies" className="right-logo" src={logo}></img> */}
+                            {/* <h2 className="text-center mt-3">Big Steps Begin with Small Steps</h2> */}
                         </div>
                     </div>
                 </div>

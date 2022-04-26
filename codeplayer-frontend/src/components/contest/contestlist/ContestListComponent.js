@@ -107,7 +107,7 @@ const ContestListComponent = (props) => {
 
     const createContestBtn = () => {
         let isAuth = isAuthenticated();
-        return  isAuth && (isAuth.user.role == 0 || isAuth.user.role == 1) && <div className="row mx-0 my-4">
+        return  <div className="row mx-0 my-4">
             <div className="container">
                 <Link to="/contest/create"><button className="btn btn-success float-right">Create Contest</button></Link>
             </div>

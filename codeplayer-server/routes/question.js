@@ -6,7 +6,7 @@ var userController = require("../controllers/user");
 var quesController = require("../controllers/question");
 var contestController = require("../controllers/contest");
 
-router.use(authController.isSignedIn);
+// router.use(authController.isSignedIn);
 
 // Get Question statement file only
 router.get("/statement/:questionId", [
@@ -15,7 +15,7 @@ router.get("/statement/:questionId", [
 
 
 // These are priveledged routes
-router.use(userController.getUserById, authController.isAdminOrSemiAdmin);
+router.use(userController.getUserById);
 
 // Create question -- using FORM DATA
 router.post("/create/:contestId",

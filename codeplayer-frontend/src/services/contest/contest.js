@@ -22,7 +22,7 @@ export const getAllContest = () => {
         headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + isAuthenticated().token
+            "Authorization": "Bearer "
         }
     })
         .then(response => (response.json()))

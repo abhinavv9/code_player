@@ -43,9 +43,6 @@ function SignInComponent() {
         setUser({ ...user, error: "" })
         signIn(user)
             .then(data => {
-                if (data.error) {
-                    setUser({ ...user, loading: false, error: data.error })
-                } else {
                     authenticate(data, () => {
                         setUser({ ...user, loading: false, error: "", success: true, redirect: true })
                         notify("success", "Welcome, " + isAuthenticated().user.username)               
@@ -55,12 +52,11 @@ function SignInComponent() {
                             setGlobals({...globals, verdict: msg})
                         })
                     });
-                }
             })
-            .catch(err => {
-                setUser({ ...user, loading: false, error: "Please Check Your Internet Connection" })
-                console.log(err);
-            })
+            // .catch(err => {
+            //     setUser({ ...user, loading: false, error: "Please Check Your Internet Connection" })
+            //     console.log(err);
+            // })
     }
 
     return (
